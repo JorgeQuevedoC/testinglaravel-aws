@@ -1,0 +1,38 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "code",
+            "type": "string"
+        },
+        {
+            "name": "buyPrice",
+            "type": "number"
+        },
+        {
+            "name": "sellPrice",
+            "type": "number"
+        }
+    ],
+    "validations": [
+        {
+            "field": "name",
+            "rules": "required"
+        },
+        {
+            "field": "code",
+            "rules": "required|max:10|min:10"
+        },
+        {
+            "field": "buyPrice",
+            "rules": "required"
+        },
+        {
+            "field": "sellPrice",
+            "rules": "required"
+        }
+    ]
+}
